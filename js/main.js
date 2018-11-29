@@ -127,7 +127,7 @@ jQuery(document).ready(function($){
             delta++;
             (delta >= scrollThreshold) && nextSection();
         }
-        $('.owl-carousel, .solution-banner').css('filter', 'blur('+ ((sectionsAvailable.filter('.visible').index() - 1) * 10 )+'px');
+        $('.owl-carousel_banner, .solution-banner').css('filter', 'blur('+ ((sectionsAvailable.filter('.visible').index() - 1) * 10 )+'px');
         console.log(sectionsAvailable.filter('.visible').index()-1);
         return false;
     }
@@ -445,7 +445,6 @@ jQuery(document).ready(function($){
         slideBy: 1,
         margin: 0
     });
-
 
 });
 
