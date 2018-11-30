@@ -1,4 +1,15 @@
 jQuery(document).ready(function($){
+
+    $('.solutions-tab a').click(function(e) {
+        e.preventDefault();
+        $('a').removeClass('active');
+        $(this).addClass('active');
+        var tab = $(this).attr('href');
+        $('.tab-block').not(tab).css({'display':'none'});
+        $(tab).fadeIn(1000);
+    });
+    $('.solutions-tab a:first').click();
+
     //variables
     var hijacking= $('body').data('hijacking'),
         animationType = $('body').data('animation'),

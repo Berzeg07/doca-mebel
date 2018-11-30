@@ -16,7 +16,9 @@
     <link rel="stylesheet" href="css/owl.theme.default.css" />
     <link rel="stylesheet" href="lib/swiper/dist/css/swiper.min.css">
     <link rel="stylesheet" href="css/style.css">
-
+    <!-- <link rel="stylesheet" type="text/css" href="lib/burger/css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="lib/burger/css/component.css" /> -->
+    <!-- <script src="lib/burger/js/modernizr.custom.js"></script> -->
     <script src="js/modernizr.js"></script> <!-- Modernizr -->
 
     <title>Doka-мебель</title>
@@ -24,7 +26,6 @@
 <!-- hijacking: on/off - animation: none/scaleDown/rotate/gallery/catch/opacity/fixed/parallax -->
 
 <body data-hijacking="on" data-animation="opacity">
-
     <div class="solution-banner">
         <div style="background-image: url(img/solutions-bg.jpg);"></div>
     </div>
@@ -84,12 +85,50 @@
 
     <section class="cd-section cd-section_03 solution-section-3">
         <div>
-            <div class="cd-section_03__title anim-brick animate-bricks direction-down animated" style="animation-delay: .75s;">
-                Какие могут быть комплексные решения
+            <div class="wrap-column">
+                <div class="cd-section_03__title anim-brick animate-bricks direction-down animated" style="animation-delay: .75s;">
+                    Какие могут быть комплексные решения
+                </div>
+
+                <div class="solutions-slider">
+
+                    <div class="solutions-img">
+                        <div id="tab-1" class="tab-block">
+                            <img src="img/kr-1.png" alt="">
+                        </div>
+                        <div id="tab-2" class="tab-block">
+                            <img src="img/bg-form.png" alt="">
+                        </div>
+                        <div id="tab-3" class="tab-block">
+                            <img src="img/kr-1.png" alt="">
+                        </div>
+                        <div id="tab-4" class="tab-block">
+                            <img src="img/bg-form.png" alt="">
+                        </div>
+                        <div id="tab-5" class="tab-block">
+                            <img src="img/kr-1.png" alt="">
+                        </div>
+                        <div id="tab-6" class="tab-block">
+                            <img src="img/bg-form.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="solutions-tab">
+                        <ul>
+                            <li><a href="#tab-1" class="active">Кухни</a></li>
+                            <li><a href="#tab-2">гостинные</a></li>
+                            <li><a href="#tab-3">спальни</a></li>
+                            <li><a href="#tab-4">прихожие</a></li>
+                            <li><a href="#tab-5">детские</a></li>
+                            <li><a href="#tab-6">ванные комнаты</a></li>
+                        </ul>
+                    </div>
+                </div>
+
             </div>
-            <div class="slider-content">
-                <!-- Swiper -->
-                <div class="swiper-container">
+            <!-- <div class="slider-content"> -->
+            <!-- Swiper -->
+            <!-- <div class="swiper-container">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide"><img src="img/kr-1.png" alt=""></div>
                         <div class="swiper-slide"><img src="img/kr-1.png" alt=""></div>
@@ -98,7 +137,6 @@
                         <div class="swiper-slide"><img src="img/kr-1.png" alt=""></div>
                         <div class="swiper-slide"><img src="img/kr-1.png" alt=""></div>
                     </div>
-                    <!-- Add Pagination -->
                     <div class="pag-wrap">
                         <div class="swiper-pagination"></div>
                         <ul class="slide-lists">
@@ -110,8 +148,8 @@
                             <li>ванные комнаты</li>
                         </ul>
                     </div>
-                </div>
-            </div>
+                </div> -->
+            <!-- </div> -->
             <div class="bottom-text anim-brick animate-bricks direction-down animated" style="animation-delay: 1.6s;">
                 Стили
             </div>
@@ -429,7 +467,9 @@
                     </a>
                 </div>
                 <div class="cd-border__line cd-border__line_middle"></div>
-                <div class="menu-burger">Меню</div>
+                <div id="st-trigger-effects">
+                    <div class="menu-burger" data-effect="st-effect-11">Меню</div>
+                </div>
                 <div class="cd-border__line cd-border__line_right"></div>
             </div>
             <div class="cd-border__bottom">
@@ -461,13 +501,13 @@
             </nav>
         </div>
     </div>
-
     <script src="js/jquery-2.1.4.js"></script>
     <script src="js/velocity.min.js"></script>
     <script src="js/velocity.ui.min.js"></script>
     <script src="js/owl.carousel.js"></script>
     <script src="js/main.js"></script> <!-- Resource jQuery -->
     <script src="js/classie.js"></script>
+    <!-- <script src="lib/burger/js/sidebarEffects.js"></script> -->
 
 
     <!-- Swiper JS -->
