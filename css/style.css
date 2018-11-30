@@ -2377,18 +2377,18 @@ nav.cd-nav,
     transform: translateY(-50%);
     width: 42px;
     height: 42px;
-    background: url(../img/cd-next.png) no-repeat center;
     z-index: 10;
     cursor: pointer;
 }
 
 .button-next {
     left: 14px;
-    transform: scaleX(-1);
+    background: url(../img/cd-prev.png) no-repeat center;
 }
 
 .button-prev {
     right: 14px;
+    background: url(../img/cd-next.png) no-repeat center;
 }
 
 .price-folio {
@@ -2411,25 +2411,87 @@ nav.cd-nav,
     bottom: 76px;
 }
 
-.form-img{
+.form-img {
     display: none;
 }
 
-@media (min-width: 992px) {
+.form-box h3 {
+    color: #ffffff;
+    font-family: 'BebasNeue';
+    font-size: 27px;
+    text-align: center;
+    font-weight: 400;
+    line-height: 60px;
+    padding-bottom: 60px;
+}
+
+.captcha{
+    margin-bottom: 20px;
+}
+
+.form-box{
+    text-align: center;
+    padding: 0 34px;
+}
+
+.form-box p {
+    padding-bottom: 25px;
+}
+
+.form-box .input{
+    max-width: 500px;
+}
+
+.legacy p {
+    padding-bottom: 15px;
+}
+
+@media (min-width: 1200px) {
+    .btn-box {
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .form-box h3 {
+        font-size: 60px;
+        text-align: left;
+    }
+    .captcha {
+        margin-right: 50px;
+        margin-bottom: 0;
+    }
+
     .form-box {
         display: -webkit-flex;
         display: -ms-flex;
         display: flex;
         margin-left: auto;
+        text-align: left;
     }
-    .form-img{
+
+    .form-img {
         display: block;
         max-width: 500px;
     }
+
+    .form-wrap {
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+    }
 }
 
-/*.form-img{
-    width: 1076px;
-    height: 782px;
-    background: url(../img/bg-form.png) center;
-}*/
+@media (min-width: 1920px) {
+    .form-img {
+        display: block;
+        max-width: 967px;
+        margin-right: 34px;
+        margin-top: -74px;
+        position: relative;
+        left: -217px;
+    }
+    .form-wrap{
+        padding-top: 100px;
+    }
+}

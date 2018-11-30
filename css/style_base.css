@@ -49,7 +49,7 @@ Main Components
 
 .cd-section {
     height: 100vh;
-    pointer-events: none;
+    /*pointer-events: none;*/
 }
 
 .cd-section.visible {

@@ -402,9 +402,14 @@
                         <div class="legacy">
                             <p>Нажав на кнопку «Получить консультацию», Вы даете <a href="#">согласие</a> на<br /> обработку персональных данных</p>
                         </div>
-                        <button class="button">
-                            <span>Получить консультацию</span>
-                        </button>
+                        <div class="btn-box">
+                            <div class="captcha">
+                                <img src="img/captcha.jpg" alt="">
+                            </div>
+                            <button class="button">
+                                <span>Получить консультацию</span>
+                            </button>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -488,7 +493,7 @@
             breakpoints: {
                 320: {
                     slidesPerView: 1,
-                    slidesPerColumn: 1,
+                    slidesPerColumn: 3,
                     spaceBetween: 0,
                 },
                 480: {
