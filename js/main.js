@@ -1,5 +1,13 @@
 jQuery(document).ready(function($) {
 
+    $(".chart-wrap").mouseover(function(){
+        $('.chart-info').fadeIn(500);
+        $('.chart-info').css('display','flex');
+        $(this).mouseleave(function(){
+            $('.chart-info').fadeOut(500);
+        });
+    });
+
     $('.menu-burger').click(function(){
         $('.menu-sidebar').addClass('left');
     });
