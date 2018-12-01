@@ -1,5 +1,9 @@
 jQuery(document).ready(function($) {
 
+    $('.menu-burger').click(function(){
+        $('.menu-sidebar').addClass('left');
+    });
+
     new Swiper('.swiper-cont', {
         slidesPerView: 1,
         loop: false,
