@@ -415,6 +415,7 @@ nav.cd-nav,
 
 .big-logo img, .big-logo__text {
     padding: 0 15px;
+    text-align: center;
 }
 
 .big-logo__text {
@@ -2599,7 +2600,7 @@ nav.cd-nav,
     left: 10px;
     color: #ffffff;
     font-family: 'BebasNeue';
-    font-size: 36px;
+    font-size: 20px;
     font-weight: 400;
     line-height: 36px;
 }
@@ -2634,6 +2635,18 @@ nav.cd-nav,
 
 .livingRoom-types_item:hover span:last-child {
     display: block;
+}
+
+@media (min-width: 1200px) {
+    .livingRoom-types_item span:first-child {
+        font-size: 28px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .livingRoom-types_item span:first-child {
+        font-size: 36px;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -2758,6 +2771,8 @@ nav.cd-nav,
     height: 100%;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
+    padding: 15px 25px;
 }
 
 .slide-content_text {
@@ -3094,7 +3109,7 @@ nav.cd-nav,
     margin: 10px;
 }
 
-.spec-about p{
+.spec-about p {
     padding-bottom: 44px;
 }
 
@@ -3102,9 +3117,11 @@ nav.cd-nav,
     .spec-testemonials_item {
         width: unset;
     }
+
     .spec-testemonials_item {
         font-size: 30px;
     }
+
     .spec-testemonials {
         max-width: 1320px;
         flex-direction: row;
@@ -3116,5 +3133,91 @@ nav.cd-nav,
 @media (min-width: 1920px) {
     .spec-testemonials_item {
         font-size: 36px;
+    }
+}
+
+.usefull-info .livingRoom-types_item span:first-child {
+    max-width: unset;
+}
+
+.usefull-info .livingRoom-types_item span:last-child {
+    bottom: 10px;
+    right: 15px;
+    top: unset;
+    left: unset;
+}
+
+.kitchen-box {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 70px 28px;
+}
+
+.kitchen-img {
+    padding-top: 22px;
+}
+
+.kitchen-img_article {
+    font-family: 'ClearSans-Light';
+    font-size: 15px;
+    padding: 10px 0px;
+    max-width: 500px;
+}
+
+.kitchen-article h3 {
+    font-family: 'BebasNeue';
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 60px;
+    margin-bottom: 25px;
+}
+
+.kitchen-article p {
+    padding-bottom: 25px;
+}
+
+.kitchen-article_1{
+    max-width: 862px;
+}
+
+.kitchen-article_2{
+    max-width: 905px;
+}
+
+.kitchen-img_article{
+    padding-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+    .kitchen-box {
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        justify-content: space-between;
+        padding: 70px 44px;
+    }
+
+    .kitchen-article_1 {
+        padding-left: 35px;
+    }
+
+    .kitchen-article h3 {
+        margin-bottom: 50px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .kitchen-article_2{
+        padding-right: 40px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .kitchen-box {
+        max-width: 1470px;
+        padding: 0;
+    }
+    .kitchen-article_2{
+        padding-right: 80px;
     }
 }
