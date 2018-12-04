@@ -129,6 +129,59 @@
         </div>
     </section>
 
+    <section class="cd-section cd-section_03">
+        <div>
+            <div id="map" style="height:100%;"></div>
+            <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+            <script type="text/javascript">
+                ymaps.ready(init);
+
+                function init() {
+                    var myMap = new ymaps.Map("map", {
+                        // Центр карты, указываем коордианты
+                        center: [56.855656, 60.603148],
+                        // Масштаб, тут все просто
+                        zoom: 12,
+                        // Отключаем все элементы управления
+                        //controls: []
+                    });
+
+                    var myGeoObjects = [];
+
+                    // Наша метка, указываем коордианты
+                    myGeoObjects = new ymaps.Placemark([56.85422706784108, 60.55540649999999], {
+                        balloonContentBody: 'г. Екатеринбург, ул. Красноармейцев, д.26, офис 306',
+                    }, {
+                        iconLayout: 'default#image',
+                        // Путь до нашей картинки
+                        iconImageHref: 'img/marker.png',
+                        // Размер по ширине и высоте
+                        //iconImageSize: [46, 58],
+                        // Смещение левого верхнего угла иконки относительно
+                        // её «ножки» (точки привязки).
+                        //iconImageOffset: [-22, -35]
+                    });
+
+                    var clusterer = new ymaps.Clusterer({
+                        clusterDisableClickZoom: false,
+                        clusterOpenBalloonOnClick: false,
+                    });
+
+                    clusterer.add(myGeoObjects);
+                    myMap.geoObjects.add(clusterer);
+                    // Отлючаем возможность изменения масштаба
+                    myMap.behaviors.disable('scrollZoom');
+                    //myMap.behaviors.disable('drag');
+
+                }
+            </script>
+
+            <div class="bottom-text anim-brick animate-bricks direction-down animated" style="animation-delay: 1.6s;">
+                Наверх
+            </div>
+        </div>
+    </section>
+
     <div class="cd-border">
         <div class="cd-border__container">
             <div class="cd-border__top">
