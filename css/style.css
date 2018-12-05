@@ -449,7 +449,7 @@ nav.cd-nav,
     padding: 0 35px;
 }
 
-.cd-section_04 form h3 {
+.cd-section_04 form h3, .aboutCompany_form h3 {
     text-transform: uppercase;
     font-family: 'BebasNeue', arial, sans-serif;
     font-size: 28px;
@@ -3099,7 +3099,7 @@ nav.cd-nav,
 .spec-testemonials_item {
     box-shadow: 0 12px 60px 3px rgba(39, 36, 72, 0.42);
     border: 1px solid #c4c1e0;
-    padding: 21px 25px;
+    padding: 5px 15px;
     color: #ffffff;
     font-family: 'BebasNeue';
     width: 100%;
@@ -3116,6 +3116,7 @@ nav.cd-nav,
 @media (min-width: 1200px) {
     .spec-testemonials_item {
         width: unset;
+        padding: 21px 25px;
     }
 
     .spec-testemonials_item {
@@ -3393,6 +3394,7 @@ nav.cd-nav,
 
 .contactInfo_box__item {
     margin-bottom: 44px;
+    position: relative;
 }
 
 .contactInfo_box__item b {
@@ -3439,6 +3441,32 @@ nav.cd-nav,
 }
 
 @media (min-width: 1200px) {
+    .contactInfo_box {
+        position: relative;
+    }
+
+    .contactInfo_box .contactInfo_box__item:nth-child(2) span {
+        position: absolute;
+        height: 10000px;
+        width: 1px;
+        top: 50%;
+        right: -30%;
+        transform: translateY(-50%);
+        background: linear-gradient(to top, #c4c1e0 0%, rgba(196, 193, 224, 0) 100%);
+        opacity: 0.7;
+    }
+
+    .line-horizontal {
+        position: absolute;
+        width: 10000px;
+        height: 1px;
+        left: 50%;
+        bottom: -28px;
+        transform: translateX(-50%);
+        background: linear-gradient(to top, #c4c1e0 0%, rgba(196, 193, 224, 0) 100%);
+        opacity: 0.7;
+    }
+
     .contactInfo_box__form {
         max-width: 700px;
         width: 100%;
@@ -3504,6 +3532,14 @@ nav.cd-nav,
 }
 
 @media (min-width: 1920px) {
+    .line-horizontal {
+        bottom: -62px;
+    }
+
+    .contactInfo_box .contactInfo_box__item:nth-child(2) span {
+        right: -70%;
+    }
+
     .contactInfo_box__form {
         max-width: 900px;
         width: 100%;
@@ -3532,5 +3568,142 @@ nav.cd-nav,
 
     .contactInfo-flex .contactInfo_box:first-child {
         margin-bottom: 70px;
+    }
+}
+
+.compTestemonials {
+    text-align: center;
+    padding: 60px 25px;
+}
+
+.compTestemonialsImg {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .compTestemonials {
+        padding: 60px 45px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .compTestemonials .spec-testemonials_item {
+        font-size: 20px;
+    }
+
+    .compTestemonialsWrap {
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+    }
+
+    .compTestemonialsImg {
+        display: block;
+        padding-left: 55px;
+    }
+
+    .compTestemonials .spec-testemonials {
+        justify-content: flex-end;
+    }
+
+    .compTestemonials {
+        text-align: right;
+        max-width: 900px;
+        width: 100%;
+    }
+
+    .compTestemonials p {
+        padding-top: 40px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .compTestemonialsImg {
+        position: relative;
+    }
+
+    .compTestemonials .spec-testemonials_item {
+        font-size: 35px;
+    }
+
+    .compTestemonials {
+        padding: 0px 85px 0px 0px;
+    }
+
+    .compTestemonials {
+        text-align: right;
+        max-width: 1007px;
+    }
+}
+
+.aboutCompany_form h3 {
+    font-size: 60px;
+    margin-bottom: 55px;
+}
+
+.aboutCompany_form p {
+    padding-bottom: 35px;
+}
+
+.aboutCompany_form__wrap {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+}
+
+.aboutCompany_form__img {
+    position: absolute;
+    left: -30%;
+    bottom: -25%;
+    display: none;
+}
+
+.aboutCompany_form .input {
+    max-width: 500px;
+}
+
+.aboutCompany_form .captcha {
+    margin-right: 27px;
+}
+
+.emptyBox{
+    display: none;
+}
+
+@media (min-width: 1200px) {
+    .emptyBox{
+        display: block;
+        max-width: 620px;
+        width: 100%;
+    }
+    .aboutCompany_form__img {
+        display: block;
+    }
+    .aboutCompany_form form{
+        margin-right: 60px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .emptyBox{
+        max-width: 700px;
+        width: 100%;
+    }
+}
+
+@media (min-width: 1920px) {
+    .emptyBox{
+        max-width: 800px;
+        width: 100%;
+    }
+    .aboutCompany_form__img {
+        position: absolute;
+        left: 0;
+        bottom: 0;
     }
 }
