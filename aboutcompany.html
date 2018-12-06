@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/owl.theme.default.css" />
     <link rel="stylesheet" href="lib/swiper/dist/css/swiper.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="lib/animslide/base.css">
     <!-- <link rel="stylesheet" type="text/css" href="lib/burger/css/demo.css" />
     <link rel="stylesheet" type="text/css" href="lib/burger/css/component.css" /> -->
     <!-- <script src="lib/burger/js/modernizr.custom.js"></script> -->
@@ -51,7 +52,7 @@
     <section class="cd-section cd-section_02">
         <div>
             <div class="compTestemonialsWrap">
-                <div class="compTestemonialsImg">
+                <div class="compTestemonialsImg  anim-brick animate-bricks direction-down animated" style="animation-delay: .35s;">
                     <img src="img/our-company.png" alt="">
                 </div>
                 <div class="compTestemonials">
@@ -81,7 +82,7 @@
                             техническое сопровождение
                         </div>
                     </div>
-                    <p>
+                    <p class="anim-brick animate-bricks direction-down animated" style="animation-delay: 1.25s;">
                         Наводнение 1777 года очень сильно испортило фонтаны Летнего сада, которые решено было не
                         восстанавливать, поэтому в 1891-1892 годах Лигов канал от центра до Обводного был засыпан. Часть канала,
                         где сейчас находятся наши выставочные залы, было засыпано уже в начале 20 века. Расстанная, Прилукская,
@@ -98,7 +99,61 @@
         </div>
     </section>
 
-    <section class="cd-section cd-section_03 aboutCompany_form">
+    <section class="cd-section cd-section_03">
+        <div>
+            <div class="slideshow">
+                <div class="slides">
+                    <div class="slide slide--current">
+                        <div class="slide__img" style="background-image: url(img/comp-slide.jpg)"></div>
+                        <div class="slider-container">
+                            <div class="slideArticle">
+                                <h3 class="slide__title">Участок складирования и хранения материалов</h2>
+                                    <p>Плитные материалы складируются и хранятся в тёплом
+                                        помещении практически вертикально в специально
+                                        отведённых для этого "яслях". Это в итоге сильно
+                                        сказывается в лучшую сторону на качестве конечных
+                                        изделий, так как, материалы не подвержены
+                                        деформации, чрезмерному увлажнению, механическим
+                                        повреждениям и многим другим отрицательным
+                                        факторам.
+                                    </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide__img" style="background-image: url(img/comp-slide.jpg)"></div>
+                        <div class="slider-container">
+                            <div class="slideArticle">
+                                <h3 class="slide__title">Форматно-Раскроечный участок</h2>
+                                    <p>Плитные материалы складируются и хранятся в тёплом
+                                        помещении практически вертикально в специально
+                                        отведённых для этого "яслях". Это в итоге сильно
+                                        сказывается в лучшую сторону на качестве конечных
+                                        изделий, так как, материалы не подвержены
+                                        деформации, чрезмерному увлажнению, механическим
+                                        повреждениям и многим другим отрицательным
+                                        факторам.
+                                    </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <nav class="slidenav">
+                    <div class="slide--prev">
+                        <button class="slidenav__item slidenav__item--prev"></button>
+                    </div>
+                    <div class="slide--next">
+                        <button class="slidenav__item slidenav__item--next"><span>Далее: <br />форматно-раскроечный участок</span></button>
+                    </div>
+                </nav>
+            </div>
+            <div class="bottom-text anim-brick animate-bricks direction-down animated" style="animation-delay: 1.6s;">
+                Есть вопросы?
+            </div>
+        </div>
+    </section>
+
+    <section class="cd-section cd-section_04 aboutCompany_form">
         <div>
             <div class="aboutCompany_form__wrap">
                 <div class="aboutCompany_form__img anim-brick animate-bricks direction-down animated" style="animation-delay: 0.4s;">
@@ -194,9 +249,15 @@
     <script src="js/owl.carousel.js"></script>
     <script src="js/main.js"></script> <!-- Resource jQuery -->
     <script src="js/classie.js"></script>
+
+    <!-- animation slider -->
+    <script src="lib/animslide/effects.js"></script>
+    <script src="lib/animslide/imagesloaded.pkgd.min.js"></script>
+    <script src="lib/animslide/anime.min.js"></script>
+    <script src="lib/animslide/slider.js"></script>
+    <!-- ========================================================= -->
+
     <!-- <script src="lib/burger/js/sidebarEffects.js"></script> -->
-
-
     <!-- Swiper JS -->
     <script src="lib/swiper/dist/js/swiper.min.js"></script>
 
