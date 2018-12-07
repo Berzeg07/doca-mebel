@@ -1,19 +1,25 @@
 jQuery(document).ready(function($) {
 
-    $(".reviews-toggle").click(function(){
+    $(".reviews-toggle").click(function() {
+        var reviewToggle = $(".reviews-toggle");
         $(".reviewsSlider .swiper-wrapper").toggleClass("showSlide");
         $(".reviews-toggle").toggleClass("eye-toggle");
+        if (reviewToggle.hasClass('eye-toggle')) {
+            $(".eye-toggle").html('Скрыть текст');
+        }else{
+            $(".reviews-toggle").html('Показать текст');
+        }
     });
 
-    $(".chart-wrap").mouseover(function(){
+    $(".chart-wrap").mouseover(function() {
         $('.chart-info').fadeIn(500);
-        $('.chart-info').css('display','flex');
-        $(this).mouseleave(function(){
+        $('.chart-info').css('display', 'flex');
+        $(this).mouseleave(function() {
             $('.chart-info').fadeOut(500);
         });
     });
 
-    $('.menu-burger').click(function(){
+    $('.menu-burger').click(function() {
         $('.menu-sidebar').addClass('left');
     });
 

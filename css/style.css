@@ -3968,7 +3968,6 @@ nav.cd-nav,
 
 .swiper-wrapper {
     opacity: 0;
-    transition: 0.5s;
 }
 
 .showSlide {
