@@ -191,6 +191,7 @@ img {
     font-size: 0;
     flex-shrink: 0;
     cursor: pointer;
+    border: none;
 }
 
 .contacts {
@@ -2166,73 +2167,10 @@ nav.cd-nav,
     position: relative;
 }
 
-/*.swiper-container {
-    max-width: 1240px;
-    height: 100vh;
-    position: relative;
-    margin: 70px auto 0px;
-    overflow: visible;
-}
-
-.swiper-slide {
-    max-width: 876px;
-    width: 100%;
-}
-
-.swiper-container-vertical>.swiper-pagination-bullets {
-    top: 10%;
-}*/
-/*.swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-}*/
 .solution-section-3 {
     padding: 0 30px;
 }
 
-/*
-.swiper-pagination {
-    display: flex;
-    flex-direction: column;
-}*/
-/*@media only screen and (min-width: 992px) {
-    .swiper-container-vertical>.swiper-pagination-bullets {
-        top: 32%;
-    }
-
-    .solution-section-3 {
-        padding: 0 48px;
-    }
-
-    .swiper-pagination .swiper-pagination-bullet {
-        width: 40px;
-        height: 40px;
-        margin-bottom: 20px;
-        background: url(../img/dots-bg.png) no-repeat top center;
-        opacity: 1;
-        transition: 0.2s;
-    }
-
-    .swiper-pagination .swiper-pagination-bullet-active {
-        background: url(../img/dots-active.png) no-repeat center;
-    }
-
-    .swiper-container-vertical>.swiper-pagination-bullets .swiper-pagination-bullet {
-        margin-bottom: 30px;
-    }
-}*/
 .cd-section_03__title {
     color: #ffffff;
     font-family: 'BebasNeue';
@@ -2254,40 +2192,6 @@ nav.cd-nav,
     padding-top: 100px;
 }
 
-/*.slide-lists {
-    display: none;
-    text-align: left;
-    color: #ffffff;
-    font-family: 'BebasNeue';
-    font-size: 36px;
-    font-weight: 400;
-    line-height: 36px;
-}
-
-.slide-lists li {
-    margin-bottom: 25px;
-    padding-left: 10px;
-}
-
-@media only screen and (min-width: 1200px) {
-    .slider-content {
-        padding-left: 50px;
-    }
-
-    .slide-lists {
-        display: block;
-        padding-left: 45px;
-    }
-}
-
-.pag-wrap {
-    position: absolute;
-    top: 67px;
-    right: 52px;
-    z-index: 100;
-    display: flex;
-    justify-content: space-between;
-}*/
 @media (min-width: 768px) {
     .solution-section-3 .bottom-text {
         bottom: 67px;
@@ -2698,7 +2602,7 @@ nav.cd-nav,
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
     .livingRoom-types_item {
         min-height: 245px;
     }
@@ -2724,7 +2628,7 @@ nav.cd-nav,
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 0 35px;
+    padding: 0 35px 50px 35px;
     width: 100%;
     overflow: hidden;
     max-width: 1570px;
@@ -3963,10 +3867,9 @@ nav.cd-nav,
     padding: 140px 30px;
     background-color: #7c73e6;
     opacity: 0.8;
-    /*display: none;*/
 }
 
-.swiper-wrapper {
+.reviewsSlider .swiper-wrapper {
     opacity: 0;
 }
 

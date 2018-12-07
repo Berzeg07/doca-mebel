@@ -800,9 +800,3 @@ $.Velocity
             }, 1]
         ]
     });
-
-$('.swiper-pagination .swiper-pagination-bullet').click(function() {
-    alert(1);
-    // var attr = $(this).attr('aria-label');
-    // console.log(attr);
-});
