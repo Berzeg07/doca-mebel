@@ -1,5 +1,16 @@
 jQuery(document).ready(function($) {
 
+    var swiper = new Swiper('.reviewsSlider', {
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'fraction',
+        },
+        navigation: {
+            nextEl: '.reviews-button-next',
+            prevEl: '.reviews-button-prev',
+        },
+    });
+
     $(".reviews-toggle").click(function() {
         var reviewToggle = $(".reviews-toggle");
         $(".reviewsSlider .swiper-wrapper").toggleClass("showSlide");
@@ -19,9 +30,9 @@ jQuery(document).ready(function($) {
         });
     });
 
-    $('.menu-burger').click(function() {
-        $('.menu-sidebar').addClass('left');
-    });
+    // $('.menu-burger').click(function() {
+    //     $('.menu-sidebar').addClass('left');
+    // });
 
     new Swiper('.swiper-cont', {
         slidesPerView: 1,

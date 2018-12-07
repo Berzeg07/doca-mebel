@@ -2278,13 +2278,13 @@ nav.cd-nav,
 }
 
 .button-next {
-    left: 14px;
-    background: url(../img/cd-prev.png) no-repeat center;
+    right: 14px;
+    background: url(../img/cd-next.png) no-repeat center;
 }
 
 .button-prev {
-    right: 14px;
-    background: url(../img/cd-next.png) no-repeat center;
+    left: 14px;
+    background: url(../img/cd-prev.png) no-repeat center;
 }
 
 .price-folio {
@@ -3874,7 +3874,7 @@ nav.cd-nav,
 }
 
 .showSlide {
-    opacity: 1;
+    opacity: 1 !important;
 }
 
 .reviewsSlider .swiper-slide h3 {
@@ -3950,5 +3950,28 @@ nav.cd-nav,
     .reviews-toggle:after {
         right: -80px;
         top: -39px;
+    }
+}
+
+.text-arrows span {
+    display: none;
+    font-family: 'BebasNeue';
+    font-size: 20px;
+    text-transform: uppercase;
+    padding-top: 10px;
+}
+
+.button-next span {
+    position: relative;
+    left: -90px;
+}
+
+.button-prev span {
+    padding-left: 48px;
+}
+
+@media (min-width: 1920px) {
+    .text-arrows span {
+        display: inline-block;
     }
 }
