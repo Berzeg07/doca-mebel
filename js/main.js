@@ -1,5 +1,10 @@
 jQuery(document).ready(function($) {
 
+    $(".reviews-toggle").click(function(){
+        $(".reviewsSlider .swiper-wrapper").toggleClass("showSlide");
+        $(".reviews-toggle").toggleClass("eye-toggle");
+    });
+
     $(".chart-wrap").mouseover(function(){
         $('.chart-info').fadeIn(500);
         $('.chart-info').css('display','flex');
