@@ -30,10 +30,6 @@ jQuery(document).ready(function($) {
         });
     });
 
-    // $('.menu-burger').click(function() {
-    //     $('.menu-sidebar').addClass('left');
-    // });
-
     new Swiper('.swiper-cont', {
         slidesPerView: 1,
         loop: false,
@@ -55,11 +51,11 @@ jQuery(document).ready(function($) {
         breakpoints: {
             320: {
                 slidesPerView: 1,
-                slidesPerColumn: 3,
+                slidesPerColumn: 1,
                 spaceBetween: 0,
             },
             480: {
-                slidesPerView: 2,
+                slidesPerView: 1,
                 slidesPerColumn: 1,
                 spaceBetween: 0,
             },

@@ -379,7 +379,7 @@ a.demo--current {
 
 @media screen and (max-width: 55em) {
     body {
-        padding: 0 0 4em 0;
+        /*padding: 0 0 4em 0;*/
     }
 
     .content {
@@ -414,7 +414,7 @@ a.demo--current {
     .codrops-links {
         margin: 0;
     }
-	
+
     .slide__link {
         font-size: 0.85em;
     }
