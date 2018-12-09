@@ -2776,7 +2776,7 @@ nav.cd-nav,
 }
 
 .form-article_inner p {
-    text-align: left;
+    text-align: center;
 }
 
 .form-article_inner {
@@ -2784,10 +2784,20 @@ nav.cd-nav,
     padding: 0 30px;
 }
 
+.form-wrap{
+    padding-bottom: 60px;
+}
+
 @media (min-width: 1200px) {
+    .form-wrap{
+        padding-bottom: 0px;
+    }
+    .form-article_inner p {
+        text-align: left;
+    }
     .form-article h3 {
         font-size: 60px;
-        line-height: 30px;
+        line-height: 60px;
         text-align: left;
     }
     .form-article_inner {
