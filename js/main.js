@@ -1,5 +1,15 @@
 jQuery(document).ready(function($) {
 
+    $('.modal-js').click(function(){
+        $('.modalWindow').fadeIn();
+        $('.overlay').fadeIn();
+    });
+
+    $('.closeModal').click(function(){
+        $('.modalWindow').fadeOut();
+        $('.overlay').fadeOut();
+    });
+
     var swiper = new Swiper('.reviewsSlider', {
         pagination: {
             el: '.swiper-pagination',
@@ -115,6 +125,7 @@ jQuery(document).ready(function($) {
         $(tab).fadeIn(1000);
     });
     $('.tab-materials-3 a:first').click();
+    // ==============================================================
 
     //variables
     var hijacking = $('body').data('hijacking'),
@@ -126,10 +137,9 @@ jQuery(document).ready(function($) {
 
     //DOM elements
     var sectionsAvailable = $('.cd-section'),
-        verticalNav = $('.cd-vertical-nav'),
+        verticalNav = $('.cd-vertical-nav_js'),
         prevArrow = verticalNav.find('a.cd-prev'),
         nextArrow = verticalNav.find('a.cd-next');
-
 
     //check the media query and bind corresponding events
     var MQ = deviceType(),
@@ -200,7 +210,6 @@ jQuery(document).ready(function($) {
             transformSection(actualBlock.children('div'), animationValues[0], animationValues[1], animationValues[2], animationValues[3], animationValues[4]);
             (offset >= 0 && offset < windowHeight) ? actualBlock.addClass('visible'): actualBlock.removeClass('visible');
         });
-
         checkNavigation();
     }
 
@@ -270,7 +279,6 @@ jQuery(document).ready(function($) {
 
             actual = actual - 1;
         }
-
         resetScroll();
     }
 

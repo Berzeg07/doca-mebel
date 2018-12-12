@@ -165,7 +165,7 @@
                                                         <span>Общая оценка</span>
                                                     </li>
                                                     <li>
-                                                        <button class="button">Заказать проект</button>
+                                                        <button class="button modal-js">Заказать проект</button>
                                                     </li>
                                                 </ul>
                                                 <div class="chart-wrap">
@@ -213,7 +213,7 @@
                                                         <span>Общая оценка</span>
                                                     </li>
                                                     <li>
-                                                        <button class="button">Заказать проект</button>
+                                                        <button class="button modal-js">Заказать проект</button>
                                                     </li>
                                                 </ul>
                                                 <div class="chart-wrap">
@@ -261,7 +261,7 @@
                                                         <span>Общая оценка</span>
                                                     </li>
                                                     <li>
-                                                        <button class="button">Заказать проект</button>
+                                                        <button class="button modal-js">Заказать проект</button>
                                                     </li>
                                                 </ul>
                                                 <div class="chart-wrap">
@@ -283,6 +283,7 @@
                             <div class="bottom-text anim-brick animate-bricks direction-down animated" style="animation-delay: 1.6s;">
                                 Проекты специалиста
                             </div>
+
                         </div>
                     </section>
 
@@ -372,7 +373,44 @@
                             </div>
                         </div>
                     </section>
-
+                    <!-- Модальное окно -->
+                    <div class="overlay"></div>
+                    <div class="modalWindow">
+                        <div class="modalWindow_inner">
+                            <div class="modalWindow_img">
+                                <h3>Заказать проект</h3>
+                                <img src="img/modal-img.png" alt="">
+                            </div>
+                            <div class="modalWindow_form">
+                                <button class="closeModal"></button>
+                                <form action="#">
+                                    <span class="input input--ruri">
+                                        <input class="input__field input__field--ruri" type="text" id="input-26" />
+                                        <label class="input__label input__label--ruri" for="input-26">
+                                            <span class="input__label-content input__label-content--ruri">Ваше имя*</span>
+                                        </label>
+                                    </span>
+                                    <span class="input input--ruri">
+                                        <input class="input__field input__field--ruri" type="text" id="input-27" />
+                                        <label class="input__label input__label--ruri" for="input-26">
+                                            <span class="input__label-content input__label-content--ruri">+7 (___) ___-__-__</span>
+                                        </label>
+                                    </span>
+                                    <div class="legacy">
+                                        <p>Нажав на кнопку «Получить консультацию», Вы даете <a href="#">согласие</a> на обработку персональных данных</p>
+                                    </div>
+                                    <div class="modalWindow_btnBox">
+                                        <div class="captcha">
+                                            <img src="img/captcha.jpg" alt="">
+                                        </div>
+                                        <button class="button">
+                                            <span>Отправить</span>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                     <div class="cd-border">
                         <div class="cd-border__container">
                             <div class="cd-border__top">
@@ -413,7 +451,7 @@
                                 <div class="cd-border__right-side"><span></span></div>
                             </div>
                             <nav class="cd-nav">
-                                <ul class="cd-vertical-nav">
+                                <ul class="cd-vertical-nav cd-vertical-nav_js">
                                     <li><a href="#0" class="cd-prev inactive">Next</a></li>
                                     <li><a href="#0" class="cd-next">Prev</a></li>
                                 </ul>
