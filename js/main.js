@@ -53,6 +53,8 @@ jQuery(document).ready(function($) {
         slidesPerView: 4,
         slidesPerColumn: 3,
         spaceBetween: 0,
+        grabCursor: false,
+        simulateTouch: false,
         loop: false,
         navigation: {
             nextEl: '.button-next',

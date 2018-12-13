@@ -2270,6 +2270,10 @@ nav.cd-nav,
     position: relative;
 }
 
+.swiper-portfolio .swiper-slide a{
+    height: 100%;
+    overflow: hidden;
+}
 .swiper-portfolio .swiper-slide img {
     object-fit: cover;
     width: 480px;
